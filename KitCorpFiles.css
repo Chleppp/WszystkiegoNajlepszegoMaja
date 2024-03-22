@@ -1,0 +1,290 @@
+html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    color: #fff;
+    text-shadow: rgba(255, 255, 255, 1) 0px 0px 15px;
+    font-family: Cascadia Mono;
+    transition: 0.4s;
+}
+
+button {
+    font-family: Cascadia Mono;
+}
+
+::selection {
+    color: black;
+    background: white;
+}
+
+.header {
+    position: absolute;
+    margin: 25px;
+    z-index: 11;
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+.header:hover {
+    opacity: 10%;
+}
+
+.opac0 {
+    animation: opac0 5s ease-in-out forwards;
+}
+
+@keyframes opac0 {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+        display: none;
+    }
+}
+
+.whole {
+    display: flex;
+    flex-direction: row;
+}
+
+.displayL {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fff;
+    box-shadow: rgba(255, 255, 255, 1) 0px 0px 30px;
+    border-radius: 10px;
+    width: 80%;
+    height: 95vh;
+    margin: 20px;
+    margin-right: 0;
+}
+
+.showD {
+    animation: showD 5s ease-in-out forwards;
+}
+
+@keyframes showD {
+    0% {
+        width: 80%;
+    }
+
+    100% {
+        width: 98%;
+    }
+}
+
+.disLTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 750px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.file {
+    display: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+}
+
+.wide {
+    animation: wide 5s ease-in-out forwards;
+}
+
+@keyframes wide {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+        display: none;
+    }
+}
+
+.disLBot {
+    height: 134px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: 1px solid #fff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.hideB {
+    animation: hideB 5s ease-in-out forwards;
+}
+
+@keyframes hideB {
+    0% {
+        opacity: 100%;
+        height: 134px;
+        width: 100%;
+    }
+
+    100% {
+        opacity: 0;
+        width: 0%;
+        height: 0px;
+        display: none;
+    }
+}
+
+.buttonR {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    margin: 10px;
+}
+
+.hideD {
+    animation: hideD 5s ease-in-out forwards;
+}
+
+@keyframes hideD {
+    0% {
+        opacity: 100%;
+        width: 20%;
+    }
+
+    100% {
+        opacity: 0%;
+        width: 0%;
+        display: none;
+    }
+}
+
+.mainBut {
+    height: 50px;
+    width: 350px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #fff;
+    border: 0px solid #fff;
+    box-shadow: rgba(255, 255, 255, 1) 0px 0px 30px;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+}
+
+.mainBut:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: rgba(255, 255, 255, 0) 0px 0px 30px;
+}
+
+.mainBut:active {
+    transition: 0.1s;
+    height: 40px;
+    width: 300px;
+}
+
+.endBut {
+    background-color: #000;
+    border: 1px solid #f1323e;
+    box-shadow: rgba(241, 50, 62, 1) 0px 0px 30px;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.endBut:hover {
+    border: 3px solid #f1323e;
+    box-shadow: rgba(241, 50, 62, 1) 0px 0px 40px;
+}
+
+.endInput {
+    width: 345px;
+    height: 50px;
+    border: 0;
+    font-size: 30px;
+    font-family: Cascadia Mono;
+    color: #fff;
+    border-bottom: 1px solid #f00;
+    background-color: #00000000;
+    transition: 0.5s;
+}
+
+.endInput:focus {
+    border-color: #f00;
+    border-bottom: 5px solid #f00;
+    background-color: #00000000;
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.endButtonDiv {
+    margin-top: 64px;
+}
+
+.shake {
+    animation: shake 1s;
+}
+
+@keyframes shake {
+    5% {
+        transform: translate(30px, 0px);
+    }
+
+    10% {
+        transform: translate(-26px, 0px);
+    }
+
+    20% {
+        transform: translate(22px, 0px);
+    }
+
+    30% {
+        transform: translate(-18px, 0px);
+    }
+
+    40% {
+        transform: translate(10px, 0px);
+    }
+
+    50% {
+        transform: translate(5px, 0px);
+    }
+
+    60% {
+        transform: translate(-3px, 0px);
+    }
+
+    70% {
+        transform: translate(1px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+
+}
