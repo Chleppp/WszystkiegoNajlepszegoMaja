@@ -26,6 +26,14 @@ p {
   background: white;
 }
 
+.MOREwhole {
+  display: flex;
+  background-color: #000;
+  width: 100%;
+  height: 200%;
+  position:absolute;
+}
+
 .whole {
   display: flex;
   flex-direction: column;
