@@ -27,12 +27,12 @@ p {
 }
 
 .MOREwhole {
-  display: flex;
+  display: none;
   margin: 0;
   padding: 0;
   background-color: #000;
-  width: 2000px;
-  height: 5000px;
+  width: 1000%;
+  height: 500%;
   position:absolute;
 }
 
