@@ -29,8 +29,8 @@ p {
 .MOREwhole {
   display: flex;
   background-color: #000;
-  width: 100%;
-  height: 200%;
+  width: 2000px;
+  height: 5000px;
   position:absolute;
 }
 
