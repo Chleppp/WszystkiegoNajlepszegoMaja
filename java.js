@@ -326,3 +326,13 @@ function sprawdzHaslo() {
     }, "700");
   }
 }
+
+function isMobile() {
+  return /Android|iPhone/i.test(navigator.userAgent);
+}
+
+console.log(isMobile());
+if(isMobile() == true)
+{
+  document.getElementById('HideAll').style.display = 'flex';
+}
