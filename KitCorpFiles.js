@@ -201,6 +201,7 @@ function sprawdzHaslo() {
         Rside.classList.toggle("hideD");
         Lside.classList.toggle("showD");
         LsideBot.classList.toggle("hideB");
+        document.querySelector(".file1").style.display = "flex";
     } else if (
         podaneHaslo == "kocham" ||
         podaneHaslo == "kocham cie" ||
