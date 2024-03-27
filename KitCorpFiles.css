@@ -109,6 +109,11 @@ button {
     opacity: 100%;
 }
 
+.file1 {
+    display: flex;
+}
+
+
 .meowAudio {
     display: none;
     justify-content: center;
