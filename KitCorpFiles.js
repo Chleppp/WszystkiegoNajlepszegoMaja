@@ -131,6 +131,7 @@ button8.addEventListener("click", function () {
     headerText.innerHTML = "meow(meew).mp3 • 17/02/2024";
     bodyText.innerHTML = "MEEW ma w swojej główce wbudowany jeden głośnik za monitorkiem. Przez to że owy monitorek jest zbudowany z dobrze wygiętego elastycznego wyświetlacza OLED, dźwięk łatwo przez niego przechodzi";
     file8.style.display = "block";
+    document.querySelector(".meowAudio").style.display = "flex";
 
 });
 
