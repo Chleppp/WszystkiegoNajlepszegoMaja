@@ -109,6 +109,12 @@ button {
     opacity: 100%;
 }
 
+.meowAudio {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
 .wide {
     animation: wide 5s ease-in-out forwards;
 }
