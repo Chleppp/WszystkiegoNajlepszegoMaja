@@ -184,6 +184,10 @@ function shake() {
     sprawdzHasloButton.classList.toggle("shake");
 }
 
+function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
 function sprawdzHaslo() {
     var podaneHaslo = sprawdzHasloInput.value;
 
@@ -201,7 +205,9 @@ function sprawdzHaslo() {
         Rside.classList.toggle("hideD");
         Lside.classList.toggle("showD");
         LsideBot.classList.toggle("hideB");
-        document.querySelector(".file1").style.display = "flex";
+        setTimeout(() => {
+            document.querySelector(".file1").style.display = "flex";
+        }, "5000");
     } else if (
         podaneHaslo == "kocham" ||
         podaneHaslo == "kocham cie" ||
